@@ -161,7 +161,7 @@ export default function App() {
         trigger: container.current,
         start: 'top top',
         end: '+=400%', // Increased scroll distance so the video plays out longer before unpinning
-        scrub: true,
+        scrub: 1.5, // Added dampening (1.5 seconds to catch up) instead of true (instant) to smooth out video decoding lag
         pin: true, // This pins the container so the page doesn't scroll down until it finishes
       },
     });
