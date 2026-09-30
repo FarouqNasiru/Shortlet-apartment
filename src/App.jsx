@@ -278,7 +278,7 @@ export default function App() {
         {/* Video Background */}
         <video
           ref={videoRef}
-          src="/lagos-skyline.mp4"
+          src="/lagos-skyline-scrub.mp4"
           className="absolute inset-0 w-full h-full object-cover z-10"
           muted       // Must be muted to interact programmatically on many browsers
           playsInline // Prevents iOS from forcing full screen
